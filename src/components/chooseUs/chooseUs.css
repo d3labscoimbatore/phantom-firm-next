@@ -1,0 +1,36 @@
+.chooseUsContainer {
+  padding: 10rem 0;
+  margin: 0 8rem;
+}
+
+.chooseUsTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0 4rem 0;
+}
+
+
+.chooseUsTitleDesc {
+  font-weight: 300;
+  max-width: 63.6rem;
+}
+
+.chooseUsCard {
+  display: flex;
+  justify-content: center;
+  padding-right: 2rem;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1024px) {
+  .chooseUsContainer {
+    padding: 4rem 0;
+    margin: 0 2rem;
+  }
+
+  .chooseUsTitle{
+    margin: 2rem 0 1.5rem 0;
+
+  }
+}

@@ -1,0 +1,71 @@
+.heroContainer {
+  background-color: var(--primary);
+}
+
+.hero {
+  display: flex;
+  margin: 0 8rem;
+  flex-wrap: wrap;
+  padding-top: 10rem;
+  height: calc(100vh - 9.6rem);
+}
+
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 50%;
+}
+
+.oneLiner {
+  font-weight: 400;
+}
+
+.oneLiner::after {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 0.1rem;
+  margin-top: 1.25rem;
+  background-color: var(--accent);
+}
+
+.animation {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.shortDescription {
+  font-weight: 100;
+  max-width: 54rem;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    margin: 0 2rem;
+    padding-top: 5rem;
+    height: max-content;
+    gap: 2rem;
+  }
+
+  .heroLeft {
+    width: 100%;
+  }
+  
+  .heroRight {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .heroRight > svg{
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .cta{
+    display: block;
+  }
+}
+

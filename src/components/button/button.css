@@ -1,0 +1,17 @@
+.btnContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: max-content;
+    height: max-content;
+    border: 1px solid var(--stroke);
+    padding: 0.5625rem 1.3125rem;
+    border-radius: 624.9375rem;
+}
+
+.btn{
+    font-size: var(--label);
+    font-weight: 400;
+}

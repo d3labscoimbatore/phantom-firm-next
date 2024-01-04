@@ -1,0 +1,36 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 4rem;
+  width: 41rem;
+  height: 28.6rem;
+  padding: 2.56rem;
+  border: 1px solid var(--stroke);
+  border-radius: 1.25rem;
+  background-color: var(--white);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tileIcon {
+  font-size: 3.2rem;
+}
+
+.titleText {
+  font-weight: 400;
+}
+
+.cardDescription {
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 1024px) {
+  .card {
+    height: max-content;
+  }
+}

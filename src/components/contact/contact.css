@@ -1,0 +1,99 @@
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  background-color: var(--primary);
+  margin: 0 2rem;
+  padding: 6.4rem 20rem;
+  border-radius: 3rem;
+}
+
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0 4rem 0;
+}
+
+.contactContent > p:first-child {
+  margin-bottom: 2rem;
+}
+
+.contactContent > p:first-child > span {
+  font-weight: 700;
+}
+
+.btn {
+  display: flex;
+  gap: 1.6rem;
+  font-size: var(--body);
+  font-weight: 700;
+}
+
+.callBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  background-color: var(--accent);
+  color: var(--white);
+  padding: 1.2rem 4rem;
+  border-radius: 4rem;
+}
+
+.callBtn > span {
+  font-size: var(--text);
+}
+
+.callBtn:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-out;
+}
+
+.whatsappBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 1.2rem 4rem;
+  border: 1px solid var(--stroke);
+  border-radius: 4rem;
+}
+
+.whatsappBtn > span {
+  font-size: var(--text);
+}
+
+.whatsappBtn:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-out;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contactContainer {
+    padding: 3.2rem 4rem;
+  }
+
+  .contactContent {
+    margin: 2rem 0 2.5rem 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .btn {
+    width: 100%;
+    flex-direction: column;
+  }
+  .callBtn {
+    width: 100%;
+    text-align: center;
+    padding: 1.2rem 10rem;
+  }
+
+  .whatsappBtn {
+    width: 100%;
+    text-align: center;
+  }
+}
