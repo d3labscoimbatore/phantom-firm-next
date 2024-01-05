@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Header = () => {
   // Mobile View Menu

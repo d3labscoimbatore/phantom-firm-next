@@ -12,8 +12,8 @@ import ChooseUsCard from "@/components/card/chooseUsCard/ChooseUsCard";
 export default function Home() {
   return (
     <main className="main">
-      <Header/>
-      <Hero />
+      {/* <Header/>
+      <Hero /> */}
       <About />
       <Service />
       <ChooseUs />
