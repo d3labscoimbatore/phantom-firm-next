@@ -1,9 +1,14 @@
 "use client";
 
+import React, { useRef } from "react";
 import "../hero/hero.css";
 
-
 const Hero = () => {
+  const ref = useRef(null);
+  React.useEffect(() => {
+    import("@lottiefiles/lottie-player");
+  });
+
   return (
     <div className="heroContainer">
       <div className="hero">
@@ -19,6 +24,7 @@ const Hero = () => {
         </div>
         <div className="heroRight">
           <lottie-player
+            ref={ref}
             autoplay
             loop
             src="https://lottie.host/f8c80bcd-3498-4e22-9430-e00de1aceb33/iQEF5v4cA3.json"
