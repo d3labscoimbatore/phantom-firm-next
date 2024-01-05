@@ -1,7 +1,7 @@
 "use client";
 
-import "@lottiefiles/lottie-player";
 import "../hero/hero.css";
+
 
 const Hero = () => {
   return (
@@ -27,7 +27,6 @@ const Hero = () => {
             debug
           ></lottie-player>
         </div>
-       
       </div>
     </div>
   );
