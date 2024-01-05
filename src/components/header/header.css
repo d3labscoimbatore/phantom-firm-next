@@ -21,16 +21,10 @@
  
 }
 
-.menus > li:hover {
+.menus > li:active {
   color: var(--accent);
-  font-weight: 400;
 }
 
-/* .menus li:not(:nth-last-child(-n + 2))::after {
-  content: "";
-  padding-left: 2.4rem;
-  border-right: 1px solid var(--stroke);
-} */
 
 .contact {
   position: relative;
@@ -68,6 +62,7 @@
 
   .menus {
     display: none;
+    transition: all .3s ease-in-out;
     gap: 0;
   }
 

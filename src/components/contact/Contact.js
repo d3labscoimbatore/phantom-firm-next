@@ -13,7 +13,7 @@ const Contact = () => {
         </div>
         <div className="contactContent">
           <h3>
-            Reach out to us for any queries, or just to say <span>hello!</span>
+            Reach out to us for any queries, or just to say <span className="contactHello">hello!</span>
           </h3>
           <p>
             Drop us a line and lets turn your ideas into reality! Whether its a

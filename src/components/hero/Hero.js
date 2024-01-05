@@ -18,8 +18,8 @@ const Hero = () => {
             <span className="animation"> People.</span>
           </h1>
           <h4 className="shortDescription">
-            Crafting digital experiences to make your brand visible and
-            relatable in the digital realm for a strong audience connection.
+            Creating digital experiences to enhance brand visibility and
+            relatability in the online space for a robust audience connection
           </h4>
         </div>
         <div className="heroRight">
