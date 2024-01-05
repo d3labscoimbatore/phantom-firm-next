@@ -18,6 +18,7 @@
   font-size: var(--body);
   gap: 3.2rem;
   font-weight: 700;
+ 
 }
 
 .menus > li:hover {
@@ -67,7 +68,15 @@
 
   .menus {
     display: none;
-    gap: 2rem;
+    gap: 0;
+  }
+
+  .menus li:not(:nth-last-child(-n+2)) {
+    margin-bottom: 2rem;
+  }
+  
+  .menus li {
+    margin-bottom: 0;
   }
 
   .menusActive {
@@ -97,11 +106,13 @@
     text-align: center;
   }
 
+
   .menus li:not(:last-child) a {
     display: block;
     border-bottom: 1px solid var(--stroke);
     padding-bottom: 1rem;
   }
+
 
   .contact{
     display: flex;

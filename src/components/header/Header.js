@@ -31,13 +31,13 @@ const Header = () => {
             <li>
               <Link href="#about">About</Link>
             </li>
-            <li>
+            <li > 
               <Link href="#faq">FAQ &apos;s</Link>
             </li>
-            <li>
+            <li >
               <Link
                 href="#contact"
-                className="contact"
+                className="contact lastItem"
                 onClick={toggleMobileMenu}
               >
                 <lottie-player
