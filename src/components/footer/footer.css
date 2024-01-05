@@ -60,7 +60,7 @@
   line-height: 2.8rem;
 }
 
-.contact {
+.Footercontact {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
@@ -135,6 +135,8 @@
 
   .footerTopRight {
     flex-direction: column;
+    align-items: flex-start;
+
     gap: 4rem;
   }
 
@@ -142,7 +144,8 @@
     gap: 2rem;
   }
 
-  .contact {
+  .Footercontact {
+    align-items: flex-start;
     gap: 2rem;
   }
 

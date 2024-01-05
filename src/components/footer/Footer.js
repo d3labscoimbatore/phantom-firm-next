@@ -37,7 +37,7 @@ const Footer = () => {
                 <br /> Tamilnadu, 641045
               </p>
             </div>
-            <div className="contact">
+            <div className="Footercontact">
               <h4 className="contactTitle">Contact Us</h4>
               <div className="contactDetails">
                 <div className="phone">

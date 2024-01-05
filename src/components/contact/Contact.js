@@ -29,7 +29,7 @@ const Contact = () => {
               Call
             </button>
           </Link>
-          <Link href="tel:7871878878">
+          <Link href="https://wa.me/7871878878">
             <button className="whatsappBtn">
               <span>
                 <IoLogoWhatsapp />

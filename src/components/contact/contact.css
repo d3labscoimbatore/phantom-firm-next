@@ -92,8 +92,17 @@
     padding: 1.2rem 10rem;
   }
 
+  .callBtn:hover {
+    transform: scale(1);
+  }
+
   .whatsappBtn {
     width: 100%;
     text-align: center;
+  }
+
+  .whatsappBtn:hover {
+    transform: scale(1);
+    transition: all 0.2s ease-out;
   }
 }
