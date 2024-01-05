@@ -2,7 +2,6 @@
 
 import "@lottiefiles/lottie-player";
 import "../hero/hero.css";
-import Link from "next/link";
 
 const Hero = () => {
   return (
