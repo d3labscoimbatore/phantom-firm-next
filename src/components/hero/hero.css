@@ -36,8 +36,9 @@
 }
 
 .shortDescription {
-  font-weight: 100;
+  font-weight: 300;
   max-width: 54rem;
+  color: var(--textColor);
 }
 
 

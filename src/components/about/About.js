@@ -7,27 +7,33 @@ function About() {
   return (
     <div className="about" id="about">
       <div className="aboutLeft">
-        <Image src={about} width="maxContent" height="maxContent" alt="About Phantom firm" />
+        <Image
+          src={about}
+          width="maxContent"
+          height="maxContent"
+          alt="About Phantom firm"
+        />
       </div>
       <div className="aboutRight">
         <div className="label">
           <Button text="About Phantom" />
         </div>
-        <h2 className="aboutTitle" >Empowering Futures through Digital Transformation</h2>
+        <h2 className="aboutTitle">
+        Revolutionize, Empower, Conquer Digitally! 
+        </h2>
         <div className="aboutPara">
           <p>
-            Our mission is to propel organizations into the future by seamlessly
-            integrating innovative digital solutions. We believe in the
-            transformative impact of technology when applied strategically, and
-            we are committed to guiding our clients through every step of their
-            digital journey.
+            At Phantom, we&apos;re on a mission to catapult businesses into the
+            future. With a seamless blend of cutting-edge tech and strategic
+            vision, we&apos;re not just guiding clients; we&apos;re steering
+            them through a transformative digital journey.
           </p>
           <p>
-            Welcome to <span className="companyName">Phantom</span>, a trailblazing force in the realm of digital
-            transformation. As a dynamic and forward-thinking company based in
-            Tamil Nadu, India, we specialize in harnessing the power of
-            cutting-edge technology to drive meaningful change for businesses
-            across diverse industries.
+            Welcome to the dynamic world of
+            <span className="companyName"> Phantom</span> - your trailblazing
+            partner in digital transformation, based in Tamil Nadu, India. Here,
+            innovation meets impact, and we specialize in propelling businesses
+            forward through the potent force of technology.
           </p>
         </div>
       </div>

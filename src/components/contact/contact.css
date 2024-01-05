@@ -17,11 +17,11 @@
   margin: 4rem 0 4rem 0;
 }
 
-.contactContent > p:first-child {
-  margin-bottom: 2rem;
+.contactContent > p {
+margin-top: 1.5rem;
 }
 
-.contactContent > p:first-child > span {
+.contactContent > h3 > span {
   font-weight: 700;
 }
 

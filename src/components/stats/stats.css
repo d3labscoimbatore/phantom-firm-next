@@ -43,8 +43,8 @@
 
 .statsText > span {
   font-size: var(--subTitle);
-  font-weight: 300;
-  color: var(--text);
+  font-weight: 400;
+  color: var(--textColor);
 }
 
 .statsText:nth-child(1),

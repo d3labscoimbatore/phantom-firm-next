@@ -12,11 +12,11 @@ const chooseUs = () => {
         </div>
         <div className="chooseUsTitle">
           <h2 className="chooseUsTitleText">
-            Inspiring engagement through innovative solutions
+            Fueling enthusiasm with inventive solutions for active involvement
           </h2>
           <p className="chooseUsTitleDesc">
-            Empower your ambitions with our unmatched expertise, where your
-            goals discover a reliable companion.
+            Unleash your aspirations with our unparalleled expertise, where your
+            ambitions find a steadfast ally.
           </p>
         </div>
         <div className="chooseUsCard">

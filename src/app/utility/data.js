@@ -59,28 +59,28 @@ export const WhyUs = [
     icon: <IoCheckmarkCircleOutline />,
     title: "Technology Pioneers",
     description:
-      "Our team of seasoned software engineering professionals stays ahead of emerging technologies, offering particular expertise in Artificial Intelligence.",
+      "In the ever-evolving tech landscape, our team of skilled software engineers leads the way, specializing in cutting-edge Artificial Intelligence to stay one step ahead",
   },
   {
     id: 2,
     icon: <IoCheckmarkCircleOutline />,
     title: "Tailored Engineering",
     description:
-      "We recognize the unique challenges of each business and engineer customized software and AI/ML solutions to meet your specific requirements.",
+      "We understand the distinctive hurdles every business faces. Our team tailors software and AI/ML solutions precisely to your needs, addressing challenges uniquely crafted for you",
   },
   {
     id: 3,
     icon: <IoCheckmarkCircleOutline />,
     title: "Cost-Effective",
     description:
-      "Our competitive pricing ensures that all businesses can benefit from cutting-edge technology solutions, not just those with extensive resources.",
+      "We believe in democratizing tech excellence. Our pocket-friendly rates ensure that groundbreaking technology solutions are accessible to all businesses, not just the ones with deep pockets",
   },
   {
     id: 4,
     icon: <IoCheckmarkCircleOutline />,
     title: "Driven by Impact",
     description:
-      "More than just problem-solvers, we are committed to leveraging our technological expertise to effect positive, transformative changes.",
+      "Beyond merely solving problems, we are dedicated to using our technological prowess to drive impactful and positive transformations",
   },
   {
     id: 5,
