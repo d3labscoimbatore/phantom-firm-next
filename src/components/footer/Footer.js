@@ -20,15 +20,15 @@ const Footer = () => {
             <div className="address">
               <div className="addressTitle">
                 <Link
-                  href="https://maps.app.goo.gl/PYQggKEPxomuPYcJ6"
+                  href=""
                   target="_blank"
                 >
                   <h4 className="contactTitle">Visit Us</h4>
                   <div className="locationIcon">
                     <span></span>
-                    <span>
-                      <TbLocationFilled />
-                    </span>
+                    <button type="button" disabled >
+                      <TbLocationFilled/>
+                    </button>
                   </div>
                 </Link>
               </div>

@@ -21,7 +21,7 @@ const Contact = () => {
           </p>
         </div>
         <div className="btn">
-          <Link href="tel:7871878878">
+          <Link href="tel:+917871878878">
             <button className="callBtn">
               <span>
                 <IoCallOutline />
@@ -29,7 +29,7 @@ const Contact = () => {
               Call
             </button>
           </Link>
-          <Link href="https://wa.me/7871878878">
+          <Link href="https://wa.me/917871878878">
             <button className="whatsappBtn">
               <span>
                 <IoLogoWhatsapp />
