@@ -56,13 +56,15 @@ body {
   margin: 0 auto;
 }
 
+/* For Tablet */
+
 @media only screen and (max-width: 820px) {
   h1 {
     font-size: 4rem;
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   h3 {
@@ -72,18 +74,24 @@ body {
   h4 {
     font-size: 1.8rem;
   }
+
+}
+
+@media only screen and (max-width: 1280px) {
   .container {
     padding: 0 3rem;
   }
 }
 
-@media only screen and (max-width: 480px) {
+/* For Mobile */
+
+@media only screen and (max-width: 600px) {
   h1 {
     font-size: 3rem;
   }
 
   h2 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
 
   h3 {
@@ -95,6 +103,6 @@ body {
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 }
