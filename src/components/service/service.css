@@ -1,10 +1,10 @@
-.service {
-  padding: 10rem 0;
+.background {
   background-color: var(--primary);
 }
-
-.serviceContainer {
-  margin: 0 8rem;
+.service {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  margin: 0 auto;
 }
 
 .serviceTitle {
@@ -16,17 +16,17 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 820px) {
   .service {
-    padding: 4rem 0;
-  }
-  .serviceContainer {
-    margin: 0 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
-  .serviceTitle{
+  .serviceTitle {
     margin: 2rem 0 1.5rem 0;
   }
 }

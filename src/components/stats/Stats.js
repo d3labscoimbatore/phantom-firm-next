@@ -4,7 +4,7 @@ import "../stats/stats.css";
 const Stats = () => {
   return (
     <div className="statsSection">
-      <div className="statsContainer">
+      <div className="statsContainer conatainer">
         <div className="statsLeft">
           <div className="label">
             <Button text="Promises" />

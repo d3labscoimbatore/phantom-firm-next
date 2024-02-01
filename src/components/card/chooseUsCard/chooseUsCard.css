@@ -8,7 +8,6 @@
 
 .chooseUsCardIcon {
   margin-top: 0.4rem;
-  font-size: 2.4rem;
 }
 
 .chooseUsCardContent {
@@ -22,8 +21,19 @@
   font-weight: 400;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 820px) {
   .chooseUsCardContainer {
     width: 100%;
+  }
+
+  .chooseUsCardIcon{
+    width: 5rem;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .chooseUsCardIcon{
+    width: 10rem;
   }
 }

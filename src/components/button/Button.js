@@ -5,7 +5,7 @@ const Button = ({text}) => {
   return (
   <div className="btnContainer">
     <span className="icon" ><GoDotFill /></span>
-    <span className="btn">{text}</span>
+    <h5 className="btnText">{text}</h5>
     </div>
   )
 }

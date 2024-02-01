@@ -23,7 +23,7 @@ const Faq = () => {
         <Button text="Frequently Asked Questions​" />
       </div>
       <div className="faqTitle">
-        <h3>You have questions and we have answers.</h3>
+        <h2>You have questions and we have answers.</h2>
       </div>
       {/* Accordion */}
 
@@ -32,7 +32,7 @@ const Faq = () => {
           return (
             <div
               key={id}
-              className={isOpened == id ? "accordion background" : "accordion"}
+              className={isOpened == id ? "accordion accordionBackground" : "accordion"}
             >
               <div className="question" onClick={() => toggle(id)}>
                 <p>{question}</p>

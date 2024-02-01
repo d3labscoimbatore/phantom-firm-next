@@ -12,9 +12,10 @@ const Contact = () => {
           <Button text="Connect with Us" />
         </div>
         <div className="contactContent">
-          <h3>
-            Reach out to us for any queries, or just to say <span className="contactHello">hello!</span>
-          </h3>
+          <h2>
+            Reach out to us for any queries, or just to say{" "}
+            <span className="contactHello">hello!</span>
+          </h2>
           <p>
             Drop us a line and lets turn your ideas into reality! Whether its a
             question, collaboration, or just a friendly chat, we are all ears

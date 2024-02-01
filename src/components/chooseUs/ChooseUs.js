@@ -6,7 +6,7 @@ import { WhyUs } from "@/app/utility/data";
 const chooseUs = () => {
   return (
     <div className="chooseUs">
-      <div className="chooseUsContainer">
+      <div className="chooseUsContainer container">
         <div className="label">
           <Button text="Why Choose Us" />
         </div>

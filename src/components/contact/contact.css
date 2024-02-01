@@ -71,20 +71,15 @@ margin-top: 1.5rem;
   transition: all 0.2s ease-out;
 }
 
-@media only screen and (max-width: 1024px) {
+
+@media only screen and (max-width: 768px) {
   .contactContainer {
     padding: 3.2rem 4rem;
+    width: 95%;
   }
 
   .contactContent {
     margin: 2rem 0 2.5rem 0;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .btn {
-    width: 100%;
-    flex-direction: column;
   }
   .callBtn {
     width: 100%;
@@ -96,13 +91,34 @@ margin-top: 1.5rem;
     transform: scale(1);
   }
 
-  .whatsappBtn {
-    width: 100%;
-    text-align: center;
-  }
 
   .whatsappBtn:hover {
     transform: scale(1);
     transition: all 0.2s ease-out;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contactContent{
+    text-align: center;
+  }
+
+  .contactContent > p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .callBtn {
+    padding: 0.7rem 4rem;
+  }
+
+  .whatsappBtn {
+    width: 100%;
+    text-align: center;
+    padding: 0.7rem 4rem;
   }
 }
