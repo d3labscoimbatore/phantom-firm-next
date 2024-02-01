@@ -28,7 +28,7 @@
   padding: 2.5rem 4rem;
 }
 
-.background {
+.accordionBackground {
   gap: 2rem;
   background-color: var(--primary);
 }
@@ -64,7 +64,7 @@
   max-height: 999px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 820px) {
   .faqSection {
     padding: 4rem 2rem;
     gap: 2rem;
@@ -87,14 +87,35 @@
   }
 
   .content {
-    font-size: var(--label);
-  }
-
-  .content {
     max-width: 100%;
+    font-size: var(--label);
   }
 
   .accordionWrapper {
     width: 100%;
   }
+}
+
+@media only screen and (max-width: 480px) {
+  .question > p {
+    font-size: 1rem;
+  }
+
+  .content {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .accordion {
+    padding:1rem;
+  }
+
+  .question > span {
+    font-size: 1.5rem;
+  }
+
+  .accordionBackground {
+    gap: 1rem;
+  }
+
 }

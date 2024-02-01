@@ -11,11 +11,11 @@ const Hero = () => {
 
   return (
     <div className="heroContainer">
-      <div className="hero">
+      <div className="hero container">
         <div className="heroLeft">
           <h1 className="oneLiner">
-            We bring your brand <br /> closer to the
-            <span className="animation"> People.</span>
+            We bring your brand <span className="lineBreak">closer to the
+            <span className="animation"> People.</span></span> 
           </h1>
           <h4 className="shortDescription">
             Creating digital experiences to enhance brand visibility and

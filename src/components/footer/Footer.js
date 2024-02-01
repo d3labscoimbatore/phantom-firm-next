@@ -11,8 +11,8 @@ import { TbLocationFilled } from "react-icons/tb";
 const Footer = () => {
   return (
     <>
-      <div className="footerSection">
-        <div className="footerTop">
+      <div className="footerSection ">
+        <div className="footerTop container">
           <div className="footerTopLogo">
             <Image src={logo} width={162} height={50} alt="Phantom Firm" />
           </div>
@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="address">
               <div className="addressTitle">
                 <Link
-                  href=""
+                  href="https://www.google.com/maps/place/12,+13,+Sowripalayam+Rd,+Chinna+Ayyavu+Thevar+Layout,+Udayampalayam,+Coimbatore,+Tamil+Nadu+641028/@11.0075752,76.9970633,17z/data=!3m1!4b1!4m5!3m4!1s0x3ba859d1d1748485:0x7c1edae979d0c1f7!8m2!3d11.0075699!4d76.9996382?entry=ttu"
                   target="_blank"
                 >
                   <h4 className="contactTitle">Visit Us</h4>
@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footerBottom">
-        <div class="footerBottomContainer">
+        <div class="footerBottomContainer container">
         <div className="footerBottomLeft">
           <Link href="#">Terms of Service</Link>
           <Link href="#">Privacy Policy</Link>

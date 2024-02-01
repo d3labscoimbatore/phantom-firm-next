@@ -1,6 +1,6 @@
 import "../chooseUsCard/chooseUsCard.css";
 import Image from "next/image";
-import chooseUsCardIcon from "../../../../public/icon.svg";
+import chooseUsCardIcon from "../../../../public/tickIcon.svg";
 
 const ChooseUsCard = ({ icon, title, description }) => {
   return (
@@ -10,7 +10,7 @@ const ChooseUsCard = ({ icon, title, description }) => {
           src={chooseUsCardIcon}
           width={100}
           height={100}
-          alt="Picture of the author"
+          alt="Tick Icon"
         />
       </div>
       <div className="chooseUsCardContent">

@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <header className="headerContainer">
-      <div className="header">
+      <div className="header container">
         <div className="image">
           <Image src={logo} alt="phantom firm" width={160} height={48} />
         </div>

@@ -5,8 +5,6 @@ import { IoCheckmarkCircleOutline } from "react-icons/io5";
 import { IoPeopleOutline } from "react-icons/io5";
 import { BsBox } from "react-icons/bs";
 import { FaChromecast } from "react-icons/fa";
-import icon from "../../../public/icon.svg";
-
 
 export const ServiceData = [
   {

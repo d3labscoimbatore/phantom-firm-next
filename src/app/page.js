@@ -7,7 +7,6 @@ import Hero from "@/components/hero/Hero";
 import Service from "@/components/service/Service";
 import Stats from "@/components/stats/Stats";
 import ChooseUs from "@/components/chooseUs/ChooseUs";
-import ChooseUsCard from "@/components/card/chooseUsCard/ChooseUsCard";
 
 export default function Home() {
   return (
