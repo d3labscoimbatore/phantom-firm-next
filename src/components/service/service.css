@@ -4,7 +4,8 @@
 }
 
 .serviceContainer {
-  margin: 0 8rem;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .serviceTitle {
@@ -16,6 +17,8 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -26,7 +29,7 @@
     margin: 0 2rem;
   }
 
-  .serviceTitle{
+  .serviceTitle {
     margin: 2rem 0 1.5rem 0;
   }
 }

@@ -4,7 +4,8 @@
 
 .hero {
   display: flex;
-  margin: 0 8rem;
+  margin: 0 auto;
+  max-width: 1280px;
   flex-wrap: wrap;
   padding-top: 10rem;
   height: calc(100vh - 9.6rem);
@@ -41,7 +42,6 @@
   color: var(--textColor);
 }
 
-
 @media only screen and (max-width: 1024px) {
   .hero {
     flex-direction: column;
@@ -54,19 +54,18 @@
   .heroLeft {
     width: 100%;
   }
-  
+
   .heroRight {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  .heroRight > svg{
+  .heroRight > svg {
     margin: 0 auto;
     width: 100%;
   }
 
-  .cta{
+  .cta {
     display: block;
   }
 }
-

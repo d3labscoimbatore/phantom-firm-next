@@ -1,9 +1,14 @@
-.statsContainer {
-  display: flex;
+.statsSection {
   background-color: var(--primary);
   margin: 0 2rem;
   padding: 7rem;
   border-radius: 3rem;
+}
+
+.statsContainer {
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .statsLeft {

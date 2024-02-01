@@ -61,6 +61,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footerBottom">
+        <div class="footerBottomContainer">
         <div className="footerBottomLeft">
           <Link href="#">Terms of Service</Link>
           <Link href="#">Privacy Policy</Link>
@@ -82,6 +83,7 @@ const Footer = () => {
         </div>
         <div className="footerBottomRight">
           Copyright © 2024 Phantom Firm. All rights reserved.
+        </div>
         </div>
       </div>
     </>
