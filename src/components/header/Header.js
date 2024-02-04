@@ -26,7 +26,7 @@ const Header = ({ headerSection }) => {
           </Link>
         </div>
         <div>
-          <ul className={`menus ${isbuttonClicked ? "menusActive" : ""}`}>
+          <ul className={`menus`}>
             <li>
               <Link
                 href={navigationLinks[0]}
