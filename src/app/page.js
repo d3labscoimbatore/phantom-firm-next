@@ -11,7 +11,7 @@ import ChooseUs from "@/components/chooseUs/ChooseUs";
 export default async function Home() {
   // API data for the HTML element
   const response = await fetch(
-    "https://run.mocky.io/v3/5a20acd4-9be6-4377-b643-e722a7b7c7f1"
+    "https://run.mocky.io/v3/74534d3a-0df3-4089-9838-892c0294ff45"
   );
   const HTMLData = await response.json();
 

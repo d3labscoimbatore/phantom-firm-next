@@ -53,6 +53,10 @@
 /* For Fold */
 
 @media only screen and (max-width: 320px) {
+  .chooseUsCard{
+    padding-right: 0;
+  }
+
   .chooseUsTitle {
     text-align: center;
     margin: 2rem 0 2rem 0;

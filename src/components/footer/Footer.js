@@ -22,15 +22,14 @@ const Footer = ({ footerSection }) => {
       <section className="footerSection">
         <div className="footerTop container">
           <div className="footerTopLogo">
-            <Image src={logo} width={162} height={50} alt="Phantom Firm" />
+            <Link href="/">
+              <Image src={logo} width={162} height={50} alt="Phantom Firm" />
+            </Link>
           </div>
           <div className="footerTopRight">
             <div className="address">
               <div className="addressTitle">
-                <Link
-                  href="https://www.google.com/maps/place/12,+13,+Sowripalayam+Rd,+Chinna+Ayyavu+Thevar+Layout,+Udayampalayam,+Coimbatore,+Tamil+Nadu+641028/@11.0075752,76.9970633,17z/data=!3m1!4b1!4m5!3m4!1s0x3ba859d1d1748485:0x7c1edae979d0c1f7!8m2!3d11.0075699!4d76.9996382?entry=ttu"
-                  target="_blank"
-                >
+                <Link href={address} target="_blank">
                   <h3 className="contactTitle"> {address.title} </h3>
                   <div className="locationIcon">
                     <span></span>
@@ -89,7 +88,7 @@ const Footer = ({ footerSection }) => {
             <Link href="#">
               <RiLinkedinFill />
             </Link>
-            <Link href="https://www.instagram.com/phantom_firm/">
+            <Link href="https://www.instagram.com/phantom_firm/" target="_blank" >
               <RiInstagramFill />
             </Link>
           </div>

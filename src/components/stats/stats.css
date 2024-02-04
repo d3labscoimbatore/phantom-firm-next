@@ -41,10 +41,6 @@
   padding: 4rem;
 }
 
-.statsText > h3 {
-  font-size: var(--base-font);
-}
-
 .statsText > h1 {
   font-weight: 700;
 }
@@ -92,4 +88,9 @@
   .statsText {
     padding: 2rem;
   }
+
+  .statsText > h3 {
+  font-size: var(--base-font);
+}
+
 }
