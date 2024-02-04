@@ -4,10 +4,18 @@ import logo from "../../../public/logo.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import { IoMenu, IoClose } from "react-icons/io5";
+import { useRef, useState, useEffect } from "react";
 import "../header/header.css";
 
 const Header = ({ headerSection }) => {
   const { navigationMenu, navigationLinks, lottiePlayerURL } = headerSection;
+
+  const [isbuttonClicked, setIsbuttonClicked] = useState(false);
+
+  const ref = useRef(null);
+  useEffect(() => {
+    import("@lottiefiles/lottie-player");
+  });
 
   return (
     <header className="headerContainer">
@@ -18,27 +26,27 @@ const Header = ({ headerSection }) => {
           </Link>
         </div>
         <div>
-          <ul className={`menus`}>
+          <ul className={`menus ${isbuttonClicked ? "menusActive" : ""}`}>
             <li>
               <Link
-                href= "#solutions"
-               
+                href={navigationLinks[0]}
+                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
               >
                 {navigationMenu[0]}
               </Link>
             </li>
             <li>
               <Link
-                href= "#about"
-              
+                href={navigationLinks[1]}
+                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
               >
                 {navigationMenu[1]}
               </Link>
             </li>
             <li>
               <Link
-                href= "faq"
-              
+                href={navigationLinks[2]}
+                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
               >
                 {navigationMenu[2]}
               </Link>
@@ -46,10 +54,11 @@ const Header = ({ headerSection }) => {
             <li>
               <Link
                 href={navigationLinks[3]}
-                
+                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
               >
                 <div className="contact lastItem">
                   <lottie-player
+                  ref={ref}
                     autoplay
                     loop
                     mode="normal"
@@ -64,6 +73,18 @@ const Header = ({ headerSection }) => {
               </Link>
             </li>
           </ul>
+
+          {/* Hamburger Menu for Mobile Device  */}
+          <button
+            className="hamburgerMenu"
+            onClick={() => setIsbuttonClicked(!isbuttonClicked)}
+          >
+            {isbuttonClicked ? (
+              <IoClose className="hamburgerMenuIcon" />
+            ) : (
+              <IoMenu className="hamburgerMenuIcon" />
+            )}
+          </button>
         </div>
       </div>
     </header>
@@ -71,3 +92,4 @@ const Header = ({ headerSection }) => {
 };
 
 export default Header;
+
