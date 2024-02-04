@@ -5,8 +5,8 @@ import { WhyUs } from "@/app/utility/data";
 
 const chooseUs = () => {
   return (
-    <div className="chooseUs">
-      <div className="chooseUsContainer container">
+    <section className="chooseUs">
+      <div className="chooseUsContainer container containerPadding">
         <div className="label">
           <Button text="Why Choose Us" />
         </div>
@@ -30,7 +30,7 @@ const chooseUs = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

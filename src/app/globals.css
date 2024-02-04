@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  /* Default font size */
+  /* Default Font Size */
   font-size: 62.5%;
 
   /* Color Variables  */
@@ -14,33 +14,10 @@
   --stroke: #a6a6a6;
   --accent-container: #ffffffb2;
 
-  /* Typography Variables */
-  --label: 1.4rem;
-  --body: 1.6rem;
-  --subTitle: 2.4rem;
-  --text: 2rem;
-}
-
-/* Typography  */
-
-h1 {
-  font-size: 6.4rem;
-}
-
-h2 {
-  font-size: 4rem;
-}
-
-h3 {
-  font-size: 3.6rem;
-}
-
-h4 {
-  font-size: 2.4rem;
-}
-
-p {
-  font-size: 1.6rem;
+  /* Typography  */
+  --base-font: 1.6rem;
+  --label-text: 1.4rem;
+  --caption-text: 1rem;
 }
 
 html {
@@ -51,50 +28,77 @@ body {
   font-size: 1.6rem;
 }
 
+/* Typography Styles */
+
+h1 {
+  font-size: 6.4rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+/* Container Styles */
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
 }
 
-/* For Tablet */
+.containerPadding {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+/* Media Query For Tablet Device*/
 
 @media only screen and (max-width: 820px) {
   h1 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   h2 {
-    font-size: 3.5rem;
-  }
-
-  h3 {
-    font-size: 3rem;
+    font-size: 3.7rem;
   }
 
   h4 {
     font-size: 1.8rem;
   }
 
+  p {
+    font-size: 1.6rem;
+  }
+
+  .containerPadding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 }
 
 @media only screen and (max-width: 1280px) {
   .container {
-    padding: 0 3rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
   }
 }
 
-/* For Mobile */
+/* Media Query For Mobile Device*/
 
 @media only screen and (max-width: 600px) {
   h1 {
-    font-size: 3rem;
+    font-size: 4.5rem;
   }
 
   h2 {
-    font-size: 3rem;
-  }
-
-  h3 {
     font-size: 3rem;
   }
 
@@ -104,5 +108,25 @@ body {
 
   p {
     font-size: 1.6rem;
+  }
+}
+
+/* Media Query For Fold Device*/
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
   }
 }

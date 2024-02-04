@@ -17,8 +17,9 @@
   gap: 2rem;
 }
 
-.tileIcon {
-  font-size: 3.2rem;
+.tileIcon > svg {
+  width: 3.2rem;
+  height: 3.2rem;
 }
 
 .titleText {
@@ -43,6 +44,6 @@
   .card {
     width: 100%;
     height: max-content;
-    gap: 1.5rem;
+    gap: 2.5rem;
   }
 }

@@ -1,11 +1,12 @@
 import "./serviceCard.css";
 
 const ServiceCard = ({ icon, title, description }) => {
+
   return (
     <div className="card">
       <div className="title">
         <span className="tileIcon">{icon}</span>
-        <h4 className="titleText">{title}</h4>
+        <h3 className="titleText">{title}</h3>
       </div>
       <div className="cardDescription">
         <p>{description}</p>

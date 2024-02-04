@@ -12,16 +12,12 @@
 }
 
 .btnText{
-    font-size: var(--body);
     font-weight: 700;
 }
 
-
-/* For Tablet */
-
-@media only screen and (max-width: 768px) {
-    .btnText{
-        font-size: 1rem;
-    }
-    
+/* Media Query For Fold Device*/
+@media only screen and (max-width: 320px) {
+.btnText{
+    font-size: var( --label-text);
+}
 }

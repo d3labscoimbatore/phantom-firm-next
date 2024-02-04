@@ -18,7 +18,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: var(--body);
   gap: 3.2rem;
   font-weight: 700;
 }
@@ -51,15 +50,16 @@
   display: none;
 }
 
-/* For Mobile  */
+/* For Mobile Device  */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .header {
     height: 5.6rem;
   }
 
-  .image {
+  .logo {
     width: 120px;
+    height: auto;
   }
 
   .menus {
@@ -93,8 +93,12 @@
   .hamburgerMenu {
     display: block;
     position: relative;
-    font-size: 3rem;
     cursor: pointer;
+  }
+
+  .hamburgerMenuIcon {
+    width: 3rem;
+    height: 3rem;
   }
 
   .menus li {
@@ -113,5 +117,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+/* For Fold Device  */
+
+@media only screen and (max-width: 320px) {
+  .logo {
+    width: 90px;
+    height: 30;
   }
 }

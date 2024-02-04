@@ -18,7 +18,7 @@ const Faq = () => {
   };
 
   return (
-    <div className="faqSection" id="faq">
+    <section id="faq" className="faqSection">
       <div className="label">
         <Button text="Frequently Asked Questions​" />
       </div>
@@ -32,14 +32,16 @@ const Faq = () => {
           return (
             <div
               key={id}
-              className={isOpened == id ? "accordion accordionBackground" : "accordion"}
+              className={
+                isOpened == id ? "accordion accordionBackground" : "accordion"
+              }
             >
               <div className="question" onClick={() => toggle(id)}>
                 <p>{question}</p>
                 <span>{isOpened == id ? <FaMinus /> : <FaPlus />}</span>
               </div>
               <div>
-                <p className={isOpened == id ? "content show" : "content"}>
+                <p className={isOpened == id ? "answer show" : "answer"}>
                   {answer}
                 </p>
               </div>
@@ -47,7 +49,7 @@ const Faq = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

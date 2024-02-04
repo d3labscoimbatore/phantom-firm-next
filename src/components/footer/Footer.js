@@ -11,7 +11,7 @@ import { TbLocationFilled } from "react-icons/tb";
 const Footer = () => {
   return (
     <>
-      <div className="footerSection ">
+      <section className="footerSection">
         <div className="footerTop container">
           <div className="footerTopLogo">
             <Image src={logo} width={162} height={50} alt="Phantom Firm" />
@@ -23,11 +23,11 @@ const Footer = () => {
                   href="https://www.google.com/maps/place/12,+13,+Sowripalayam+Rd,+Chinna+Ayyavu+Thevar+Layout,+Udayampalayam,+Coimbatore,+Tamil+Nadu+641028/@11.0075752,76.9970633,17z/data=!3m1!4b1!4m5!3m4!1s0x3ba859d1d1748485:0x7c1edae979d0c1f7!8m2!3d11.0075699!4d76.9996382?entry=ttu"
                   target="_blank"
                 >
-                  <h4 className="contactTitle">Visit Us</h4>
+                  <h3 className="contactTitle">Visit Us</h3>
                   <div className="locationIcon">
                     <span></span>
-                    <button type="button" disabled >
-                      <TbLocationFilled/>
+                    <button type="button" disabled>
+                      <TbLocationFilled />
                     </button>
                   </div>
                 </Link>
@@ -38,13 +38,11 @@ const Footer = () => {
               </p>
             </div>
             <div className="Footercontact">
-              <h4 className="contactTitle">Contact Us</h4>
+              <h3 className="contactTitle">Contact Us</h3>
               <div className="contactDetails">
                 <div className="phone">
                   <p>Phone</p>
-                  <Link href="tel:7871878878" className="contactLinks">
-                    +91 78718 78878
-                  </Link>
+                  <Link href="tel:7871878878">+91 78718 78878</Link>
                 </div>
                 <div className="email">
                   <p>Email</p>
@@ -59,33 +57,33 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="footerBottom">
-        <div class="footerBottomContainer container">
-        <div className="footerBottomLeft">
-          <Link href="#">Terms of Service</Link>
-          <Link href="#">Privacy Policy</Link>
-          <Link href="#">Anti-spam Policy</Link>
+      </section>
+      <section className="footerBottom">
+        <div className="footerBottomContainer container">
+          <div className="footerBottomLeft">
+            <Link href="#">Terms of Service</Link>
+            <Link href="#">Privacy Policy</Link>
+            <Link href="#">Anti-spam Policy</Link>
+          </div>
+          <div className="footerBottomCenter">
+            <Link href="#">
+              <RiFacebookFill />
+            </Link>
+            <Link href="#">
+              <RiTwitterXFill />
+            </Link>
+            <Link href="#">
+              <RiLinkedinFill />
+            </Link>
+            <Link href="https://www.instagram.com/phantom_firm/">
+              <RiInstagramFill />
+            </Link>
+          </div>
+          <div className="footerBottomRight">
+            Copyright © 2024 Phantom Firm. All rights reserved.
+          </div>
         </div>
-        <div className="footerBottomCenter">
-          <Link href="#">
-            <RiFacebookFill />
-          </Link>
-          <Link href="#">
-            <RiTwitterXFill />
-          </Link>
-          <Link href="#">
-            <RiLinkedinFill />
-          </Link>
-          <Link href="#">
-            <RiInstagramFill />
-          </Link>
-        </div>
-        <div className="footerBottomRight">
-          Copyright © 2024 Phantom Firm. All rights reserved.
-        </div>
-        </div>
-      </div>
+      </section>
     </>
   );
 };

@@ -3,16 +3,19 @@ import Button from "../button/Button";
 import { ServiceData } from "@/app/utility/data";
 import ServiceCard from "../card/serviceCard/ServiceCard";
 
-const Service = () => {
+const Service = ({ serviceSection }) => {
+
+  const { Label, Title } = serviceSection;
+
   return (
-    <div className="background">
-      <div className="service container" id="solutions">
+    <div id="solutions"className="containerBackground">
+      <section  className="service container containerPadding">
         <div className=" serviceContainer ">
           <div className="label">
-            <Button text="What we do" />
+            <Button text={Label} />
           </div>
           <div className="serviceTitle">
-            <h2>Elite Solutions Collection</h2>
+            <h2>{Title}</h2>
           </div>
           <div className="serviceCard">
             {ServiceData.map(({ id, icon, title, description }) => (
@@ -25,7 +28,7 @@ const Service = () => {
             ))}
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

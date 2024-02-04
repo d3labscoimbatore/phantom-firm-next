@@ -1,41 +1,54 @@
 "use client";
 
-import "../header/header.css";
 import logo from "../../../public/logo.jpg";
 import Image from "next/image";
 import Link from "next/link";
-import { IoMenu } from "react-icons/io5";
-import { IoClose } from "react-icons/io5";
+import { IoMenu, IoClose } from "react-icons/io5";
 import { useState } from "react";
+import "../header/header.css";
 
 const Header = () => {
-  // Mobile View Menu
-
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+  const [isbuttonClicked, setIsbuttonClicked] = useState(false);
 
   return (
     <header className="headerContainer">
       <div className="header container">
-        <div className="image">
-          <Image src={logo} alt="phantom firm" width={160} height={48} />
+        <div className="logo">
+          <Link href="/">
+            <Image src={logo} alt="phantom firm" width={160} height={48} />
+          </Link>
         </div>
-        <div onClick={toggleMobileMenu}>
-          <ul className={`menus ${isMobileMenuOpen ? "menusActive" : ""}`}>
+        <div>
+          <ul className={`menus ${isbuttonClicked ? "menusActive" : ""}`}>
             <li>
-              <Link href="#solutions">Solutions</Link>
+              <Link
+                href="#solutions"
+                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
+              >
+                Solutions
+              </Link>
             </li>
             <li>
-              <Link href="#about">About</Link>
+              <Link
+                href="#about"
+                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
+              >
+                About
+              </Link>
             </li>
             <li>
-              <Link href="#faq">FAQ &apos;s</Link>
+              <Link
+                href="#faq"
+                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
+              >
+                FAQ&apos;s
+              </Link>
             </li>
             <li>
-              <Link href="#contact" onClick={toggleMobileMenu}>
+              <Link
+                href="#contact"
+                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
+              >
                 <div className="contact lastItem">
                   <lottie-player
                     autoplay
@@ -53,10 +66,17 @@ const Header = () => {
             </li>
           </ul>
 
-          {/* Only on Mobile view - Hamburger Menu  */}
-          <div className="hamburgerMenu" onClick={toggleMobileMenu}>
-            {isMobileMenuOpen ? <IoClose /> : <IoMenu />}
-          </div>
+          {/* Hamburger Menu for Mobile Device  */}
+          <button
+            className="hamburgerMenu"
+            onClick={() => setIsbuttonClicked(!isbuttonClicked)}
+          >
+            {isbuttonClicked ? (
+              <IoClose className="hamburgerMenuIcon" />
+            ) : (
+              <IoMenu className="hamburgerMenuIcon" />
+            )}
+          </button>
         </div>
       </div>
     </header>

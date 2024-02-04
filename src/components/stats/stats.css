@@ -1,7 +1,6 @@
 .statsSection {
   background-color: var(--primary);
   margin: 0 2rem;
-  padding: 7rem;
   border-radius: 3rem;
 }
 
@@ -42,12 +41,15 @@
   padding: 4rem;
 }
 
+.statsText > h3 {
+  font-size: var(--base-font);
+}
+
 .statsText > h1 {
   font-weight: 700;
 }
 
-.statsText > span {
-  font-size: var(--subTitle);
+.statsText > p {
   font-weight: 400;
   color: var(--textColor);
 }
@@ -57,18 +59,26 @@
   border-bottom: 1px solid var(--stroke);
 }
 
+/* For Tablet */
+
 @media only screen and (max-width: 820px) {
   .statsSection {
     padding: 0;
   }
   .statsContainer {
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
     flex-wrap: wrap;
-    padding: 2rem;
+    padding: 2.5rem;
   }
   .statsLeft {
     width: 100%;
+  }
+
+  .statscontent {
+    max-width: 100%;
+    text-align: center;
+    gap: 1rem;
   }
 
   .statsRight {
@@ -81,19 +91,5 @@
 
   .statsText {
     padding: 2rem;
-  }
-
-  .statsText > span {
-    font-size: var(--body);
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .statsContainer {
-    gap: 2rem;
-  }
-
-  .statsText > span {
-    font-size: 1rem;
   }
 }

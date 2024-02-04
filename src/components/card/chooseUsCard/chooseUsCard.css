@@ -21,19 +21,22 @@
   font-weight: 400;
 }
 
+/* For Tablet Device */
+
 @media only screen and (max-width: 820px) {
   .chooseUsCardContainer {
     width: 100%;
   }
-
-  .chooseUsCardIcon{
-    width: 5rem;
-  }
 }
 
+/* For Fold Device */
 
-@media only screen and (max-width: 480px) {
-  .chooseUsCardIcon{
-    width: 10rem;
-  }
+@media only screen and (max-width: 320px) {
+.chooseUsCardContent {
+padding-left: 1rem;
+}
+
+.chooseUsCard{
+  padding-right: 0;
+}
 }

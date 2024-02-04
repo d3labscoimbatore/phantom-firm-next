@@ -1,20 +1,15 @@
 import "../chooseUsCard/chooseUsCard.css";
 import Image from "next/image";
-import chooseUsCardIcon from "../../../../public/tickIcon.svg";
+import tickIcon from "../../../../public/tickIcon.svg";
 
 const ChooseUsCard = ({ icon, title, description }) => {
   return (
     <div className="chooseUsCardContainer">
       <div className="chooseUsCardIcon">
-        <Image
-          src={chooseUsCardIcon}
-          width={100}
-          height={100}
-          alt="Tick Icon"
-        />
+        <Image src={tickIcon} width={100} height={100} alt="icon" />
       </div>
       <div className="chooseUsCardContent">
-        <h4>{title}</h4>
+        <h3>{title}</h3>
         <p>{description}</p>
       </div>
     </div>
