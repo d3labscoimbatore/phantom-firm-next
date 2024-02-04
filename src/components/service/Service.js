@@ -5,17 +5,17 @@ import ServiceCard from "../card/serviceCard/ServiceCard";
 
 const Service = ({ serviceSection }) => {
 
-  const { Label, Title } = serviceSection;
+  const { id, label, title } = serviceSection;
 
   return (
     <div id="solutions"className="containerBackground">
       <section  className="service container containerPadding">
         <div className=" serviceContainer ">
           <div className="label">
-            <Button text={Label} />
+            <Button text={label} />
           </div>
           <div className="serviceTitle">
-            <h2>{Title}</h2>
+            <h2>{title}</h2>
           </div>
           <div className="serviceCard">
             {ServiceData.map(({ id, icon, title, description }) => (

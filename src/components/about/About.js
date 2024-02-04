@@ -4,7 +4,11 @@ import Image from "next/image";
 import Button from "../button/Button";
 
 function About({ aboutSection }) {
-  const { Label, Title, Paragraph1, Paragraph2 } = aboutSection;
+  const { label, title, description } = aboutSection;
+
+  const firstPara = description.substring(0, 229);
+  const secondPara = description.substring(230, 474);
+
   return (
     <section id="about" className="about container containerPadding">
       <div className="aboutLeft">
@@ -17,12 +21,12 @@ function About({ aboutSection }) {
       </div>
       <div className="aboutRight">
         <div className="label">
-          <Button text={Label} />
+          <Button text={label} />
         </div>
-        <h2 className="aboutTitle">{Title}</h2>
+        <h2 className="aboutTitle">{title}</h2>
         <div className="aboutPara">
-          <p>{Paragraph1}</p>
-          <p>{Paragraph2}</p>
+          <p>{firstPara}</p>
+          <p>{secondPara}</p>
         </div>
       </div>
     </section>

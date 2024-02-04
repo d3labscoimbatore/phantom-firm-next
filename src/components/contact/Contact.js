@@ -4,38 +4,40 @@ import Button from "../button/Button";
 import "../contact/contact.css";
 import Link from "next/link";
 
-const Contact = () => {
+const Contact = ({ contactSection }) => {
+  const { label, title, subtitle, socialMedia } = contactSection;
+
+  const titleFirst = title.substring(0, 47);
+  const titleSecond = title.substring(48, 54);
+
   return (
     <section id="contact" className="contact">
       <div className="contactContainer">
-        <div className="label">
+        <div className={label}>
           <Button text="Connect with Us" />
         </div>
         <div className="contactContent">
           <h2>
-            Reach out to us for any queries, or just to say
-            <span className="contactHello"> hello! </span>
+            {titleFirst}
+            <span className="contactHello"> {titleSecond} </span>
           </h2>
-          <p>
-            Drop us a line and lets turn your ideas into reality! Whether its a
-            question, collaboration, or just a friendly chat, we are all ears
-          </p>
+          <p>{subtitle}</p>
         </div>
         <div className="btn">
-          <Link href="tel:+917871878878">
+          <Link href= {socialMedia[0].url}>
             <button className="callBtn">
               <span>
                 <IoCallOutline />
               </span>
-              Call
+             {socialMedia[0].name}
             </button>
           </Link>
-          <Link href="https://wa.me/917871878878">
+          <Link href= {socialMedia[1].url} >
             <button className="whatsappBtn">
               <span>
                 <IoLogoWhatsapp />
               </span>
-              Whatsapp
+              {socialMedia[1].name}
             </button>
           </Link>
         </div>

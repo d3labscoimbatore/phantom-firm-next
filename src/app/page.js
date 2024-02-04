@@ -11,32 +11,33 @@ import ChooseUs from "@/components/chooseUs/ChooseUs";
 export default async function Home() {
   // API data for the HTML element
   const response = await fetch(
-    "https://run.mocky.io/v3/1ec8374b-0b1c-4809-b1da-266f0504934b"
+    "https://run.mocky.io/v3/5a20acd4-9be6-4377-b643-e722a7b7c7f1"
   );
   const HTMLData = await response.json();
 
   const {
-    HeroSection,
-    AboutSection,
-    ServiceSection,
-    BenefitsSection,
-    StatisticSection,
-    FAQSection,
-    ContactSection,
-    FooterSection,
+    headerSection,
+    heroSection,
+    aboutSection,
+    serviceSection,
+    benefitsSection,
+    statisticSection,
+    faqSection,
+    contactSection,
+    footerSection,
   } = HTMLData;
 
   return (
     <main>
-      <Header />
-      <Hero heroSection={HeroSection} />
-      <About aboutSection={AboutSection} />
-      <Service serviceSection={ServiceSection} />
-      <ChooseUs benefitsSection={BenefitsSection} />
-      <Stats statisticSection={StatisticSection} />
-      <Faq fAQSection={FAQSection} />
-      <Contact contactSection={ContactSection} />
-      <Footer footerSection={FooterSection} />
+      <Header headerSection={headerSection} />
+      <Hero heroSection={heroSection} />
+      <About aboutSection={aboutSection} />
+      <Service serviceSection={serviceSection} />
+      <ChooseUs benefitsSection={benefitsSection} />
+      <Stats statisticSection={statisticSection} />
+      <Faq faqSection={faqSection} />
+      <Contact contactSection={contactSection} />
+      <Footer footerSection={footerSection} />
     </main>
   );
 }

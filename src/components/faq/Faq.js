@@ -4,10 +4,11 @@ import { FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa6";
 import Button from "../button/Button";
 import "../faq/faq.css";
-import { Faqs } from "@/app/utility/data";
 import { useState } from "react";
 
-const Faq = () => {
+const Faq = ({ faqSection }) => {
+  const { label, title, faqs } = faqSection;
+
   const [isOpened, setIsOpened] = useState(1);
 
   const toggle = (i) => {
@@ -19,16 +20,16 @@ const Faq = () => {
 
   return (
     <section id="faq" className="faqSection">
-      <div className="label">
+      <div className= {label} >
         <Button text="Frequently Asked Questions​" />
       </div>
       <div className="faqTitle">
-        <h2>You have questions and we have answers.</h2>
+        <h2> {title} </h2>
       </div>
       {/* Accordion */}
 
       <div className="accordionWrapper">
-        {Faqs.map(({ id, question, answer }) => {
+        {faqs.map(({ id, question, answer }) => {
           return (
             <div
               key={id}

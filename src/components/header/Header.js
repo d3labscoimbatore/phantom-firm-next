@@ -7,7 +7,9 @@ import { IoMenu, IoClose } from "react-icons/io5";
 import { useState } from "react";
 import "../header/header.css";
 
-const Header = () => {
+const Header = ({ headerSection }) => {
+  const { navigationMenu, navigationLinks, lottiePlayerURL } = headerSection;
+
   const [isbuttonClicked, setIsbuttonClicked] = useState(false);
 
   return (
@@ -22,31 +24,31 @@ const Header = () => {
           <ul className={`menus ${isbuttonClicked ? "menusActive" : ""}`}>
             <li>
               <Link
-                href="#solutions"
+                href={navigationLinks[0]}
                 onClick={() => setIsbuttonClicked(!isbuttonClicked)}
               >
-                Solutions
+                {navigationMenu[0]}
               </Link>
             </li>
             <li>
               <Link
-                href="#about"
+                href={navigationLinks[1]}
                 onClick={() => setIsbuttonClicked(!isbuttonClicked)}
               >
-                About
+                {navigationMenu[1]}
               </Link>
             </li>
             <li>
               <Link
-                href="#faq"
+                href={navigationLinks[2]}
                 onClick={() => setIsbuttonClicked(!isbuttonClicked)}
               >
-                FAQ&apos;s
+                {navigationMenu[2]}
               </Link>
             </li>
             <li>
               <Link
-                href="#contact"
+                href={navigationLinks[3]}
                 onClick={() => setIsbuttonClicked(!isbuttonClicked)}
               >
                 <div className="contact lastItem">
@@ -54,13 +56,13 @@ const Header = () => {
                     autoplay
                     loop
                     mode="normal"
-                    src="https://lottie.host/0de05f94-44bb-4613-9315-0b160a4699f7/IOuWHVJwcS.json"
+                    src={lottiePlayerURL}
                     style={{
                       width: "22rem",
                       height: "max-content",
                     }}
                   ></lottie-player>
-                  <span className="contactText">Say Hello!</span>
+                  <span className="contactText"> {navigationMenu[3]} </span>
                 </div>
               </Link>
             </li>
