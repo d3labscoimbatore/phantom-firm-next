@@ -4,13 +4,10 @@ import logo from "../../../public/logo.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import { IoMenu, IoClose } from "react-icons/io5";
-import {  useState } from "react";
 import "../header/header.css";
 
 const Header = ({ headerSection }) => {
   const { navigationMenu, navigationLinks, lottiePlayerURL } = headerSection;
-
-  const [isbuttonClicked, setIsbuttonClicked] = useState(false);
 
   return (
     <header className="headerContainer">
@@ -21,45 +18,52 @@ const Header = ({ headerSection }) => {
           </Link>
         </div>
         <div>
-          <ul className={`menus ${isbuttonClicked ? "menusActive" : ""}`}>
+          <ul className={`menus`}>
             <li>
               <Link
-                href={navigationLinks[0]}
-                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
+                href= "#solutions"
+               
               >
                 {navigationMenu[0]}
               </Link>
             </li>
             <li>
               <Link
-                href={navigationLinks[1]}
-                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
+                href= "#about"
+              
               >
                 {navigationMenu[1]}
               </Link>
             </li>
             <li>
               <Link
-                href={navigationLinks[2]}
-                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
+                href= "faq"
+              
               >
                 {navigationMenu[2]}
               </Link>
             </li>
-           
+            <li>
+              <Link
+                href={navigationLinks[3]}
+                
+              >
+                <div className="contact lastItem">
+                  <lottie-player
+                    autoplay
+                    loop
+                    mode="normal"
+                    src={lottiePlayerURL}
+                    style={{
+                      width: "22rem",
+                      height: "max-content",
+                    }}
+                  ></lottie-player>
+                  <span className="contactText"> {navigationMenu[3]} </span>
+                </div>
+              </Link>
+            </li>
           </ul>
-
-          {/* Hamburger Menu for Mobile Device  */}
-          <button
-            className="hamburgerMenu"
-            onClick={() => setIsbuttonClicked(!isbuttonClicked)}
-          >
-            {isbuttonClicked ? (
-              <IoClose className="hamburgerMenuIcon" />
-            ) : (
-              <IoMenu className="hamburgerMenuIcon" />
-            )}
-          </button>
         </div>
       </div>
     </header>
