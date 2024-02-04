@@ -9,6 +9,7 @@ import "../header/header.css";
 
 const Header = ({ headerSection }) => {
   const { navigationMenu, navigationLinks, lottiePlayerURL } = headerSection;
+  const [navbar, setNavbar] = useState(false);
 
   const [isbuttonClicked, setIsbuttonClicked] = useState(false);
 
@@ -18,76 +19,50 @@ const Header = ({ headerSection }) => {
   });
 
   return (
-    <header className="headerContainer">
-      <div className="header container">
-        <div className="logo">
-          <Link href="/">
-            <Image src={logo} alt="phantom firm" width={160} height={48} />
-          </Link>
+    <div>
+      <nav className="w-full bg-black fixed top-0 left-0 right-0 z-10">
+        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+          <div>
+            <div className="flex items-center justify-between py-3 md:py-5 md:block">
+              {/* LOGO */}
+              <Link href="/">
+                <h2 className="text-2xl text-cyan-600 font-bold ">LOGO</h2>
+              </Link>
+            </div>
+          </div>
+          <div>
+            <div
+              className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+                navbar ? 'p-12 md:p-0 block' : 'hidden'
+              }`}
+            >
+              <ul className="h-screen md:h-auto items-center justify-center md:flex ">
+                <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <Link href="#about" onClick={() => setNavbar(!navbar)}>
+                    About
+                  </Link>
+                </li>
+                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <Link href="#blog" onClick={() => setNavbar(!navbar)}>
+                    Blogs
+                  </Link>
+                </li>
+                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <Link href="#contact" onClick={() => setNavbar(!navbar)}>
+                    Contact
+                  </Link>
+                </li>
+                <li className="pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                  <Link href="#projects" onClick={() => setNavbar(!navbar)}>
+                    Projects
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div>
-          <ul className={`menus ${isbuttonClicked ? "menusActive" : ""}`}>
-            <li>
-              <Link
-                href={navigationLinks[0]}
-                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
-              >
-                {navigationMenu[0]}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={navigationLinks[1]}
-                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
-              >
-                {navigationMenu[1]}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={navigationLinks[2]}
-                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
-              >
-                {navigationMenu[2]}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={navigationLinks[3]}
-                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
-              >
-                <div className="contact lastItem">
-                  <lottie-player
-                  ref={ref}
-                    autoplay
-                    loop
-                    mode="normal"
-                    src={lottiePlayerURL}
-                    style={{
-                      width: "22rem",
-                      height: "max-content",
-                    }}
-                  ></lottie-player>
-                  <span className="contactText"> {navigationMenu[3]} </span>
-                </div>
-              </Link>
-            </li>
-          </ul>
-
-          {/* Hamburger Menu for Mobile Device  */}
-          <button
-            className="hamburgerMenu"
-            onClick={() => setIsbuttonClicked(!isbuttonClicked)}
-          >
-            {isbuttonClicked ? (
-              <IoClose className="hamburgerMenuIcon" />
-            ) : (
-              <IoMenu className="hamburgerMenuIcon" />
-            )}
-          </button>
-        </div>
-      </div>
-    </header>
+      </nav>
+    </div>
   );
 };
 
