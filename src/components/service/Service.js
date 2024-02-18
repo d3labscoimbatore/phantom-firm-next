@@ -5,7 +5,7 @@ import ServiceCard from "../card/serviceCard/ServiceCard";
 
 const Service = ({ serviceSection }) => {
 
-  const { id, label, title } = serviceSection;
+  const { label, title } = serviceSection;
 
   return (
     <div id="solutions"className="containerBackground">

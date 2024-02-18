@@ -21,7 +21,7 @@ const Faq = ({ faqSection }) => {
   return (
     <section id="faq" className="faqSection">
       <div className= {label} >
-        <Button text="Frequently Asked Questions​" />
+        <Button text="Frequently Asked Questions" />
       </div>
       <div className="faqTitle">
         <h2> {title} </h2>
