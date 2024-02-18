@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Testabout = () => {
   return (
-    <section style={{height: "100vh"}}>
+    <section id='about' style={{height: "100vh"}}>
       About
     </section>
   )
