@@ -7,8 +7,8 @@ import Hero from "@/components/hero/Hero";
 import Service from "@/components/service/Service";
 import Stats from "@/components/stats/Stats";
 import ChooseUs from "@/components/chooseUs/ChooseUs";
-import TestHeader from "@/components/Test/TestHeader";
-
+import { Testabout } from "@/components/Test/about/Testabout";
+import TestHeader from "@/components/Test/header/TestHeader";
 export default async function Home() {
   // API data for the HTML element
   const response = await fetch(
@@ -30,15 +30,18 @@ export default async function Home() {
 
   return (
     <main>
-      <Header headerSection={headerSection} />
-      <Hero heroSection={heroSection} />
+      <TestHeader/>
+      {/* <Testabout/> */}
       <About aboutSection={aboutSection} />
+      {/* <Header headerSection={headerSection} />
+      <Hero heroSection={heroSection} />
+      
       <Service serviceSection={serviceSection} />
       <ChooseUs benefitsSection={benefitsSection} />
       <Stats statisticSection={statisticSection} />
       <Faq faqSection={faqSection} />
       <Contact contactSection={contactSection} />
-      <Footer footerSection={footerSection} />
+      <Footer footerSection={footerSection} /> */}
     </main>
   );
 }
