@@ -7,7 +7,6 @@ import Hero from "@/components/hero/Hero";
 import Service from "@/components/service/Service";
 import Stats from "@/components/stats/Stats";
 import ChooseUs from "@/components/chooseUs/ChooseUs";
-import TestHeader from "@/components/Test/TestHeader";
 
 export default async function Home() {
   // API data for the HTML element
@@ -30,8 +29,7 @@ export default async function Home() {
 
   return (
     <main>
-      <TestHeader/>
-      {/* <Header headerSection={headerSection} />
+      <Header headerSection={headerSection} />
       <Hero heroSection={heroSection} />
       <About aboutSection={aboutSection} />
       <Service serviceSection={serviceSection} />
@@ -39,7 +37,7 @@ export default async function Home() {
       <Stats statisticSection={statisticSection} />
       <Faq faqSection={faqSection} />
       <Contact contactSection={contactSection} />
-      <Footer footerSection={footerSection} /> */}
+      <Footer footerSection={footerSection} />
     </main>
   );
 }
