@@ -10,57 +10,26 @@ import "../header/header.css";
 const Header = ({ headerSection }) => {
   const { navigationMenu } = headerSection;
 
-  const [isbuttonClicked, setIsbuttonClicked] = useState(false);
-
-
   return (
     <header className="headerContainer">
       <div className="header container">
         <div className="logo">
-          <Link href="/"  >
+          <Link href="/">
             <Image src={logo} alt="phantom firm" width={160} height={48} />
           </Link>
         </div>
         <div>
-          <ul className={`menus ${isbuttonClicked ? "menusActive" : ""}`}>
+          <ul>
             <li>
-              <Link
-                href= "/#solutions"
-                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
-              >
-                {navigationMenu[0]}
-              </Link>
+              <Link href="/#solutions">{navigationMenu[0]}</Link>
             </li>
             <li>
-              <Link
-                href= "/#about"
-                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
-              >
-                {navigationMenu[1]}
-              </Link>
+              <Link href="/#about">{navigationMenu[1]}</Link>
             </li>
             <li>
-              <Link
-                href=  "/#faq"
-                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
-              >
-                {navigationMenu[2]}
-              </Link>
+              <Link href="/#faq">{navigationMenu[2]}</Link>
             </li>
-           
           </ul>
-
-          {/* Hamburger Menu for Mobile Device  */}
-          <button
-            className="hamburgerMenu"
-            onClick={() => setIsbuttonClicked(!isbuttonClicked)}
-          >
-            {isbuttonClicked ? (
-              <IoClose className="hamburgerMenuIcon" />
-            ) : (
-              <IoMenu className="hamburgerMenuIcon" />
-            )}
-          </button>
         </div>
       </div>
     </header>
@@ -68,4 +37,3 @@ const Header = ({ headerSection }) => {
 };
 
 export default Header;
-
