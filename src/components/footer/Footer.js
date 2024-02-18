@@ -29,7 +29,7 @@ const Footer = ({ footerSection }) => {
           <div className="footerTopRight">
             <div className="address">
               <div className="addressTitle">
-                <Link href={address} target="_blank">
+                <Link href={address.URL} target="_blank">
                   <h3 className="contactTitle"> {address.title} </h3>
                   <div className="locationIcon">
                     <span></span>

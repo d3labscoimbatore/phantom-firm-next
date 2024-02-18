@@ -18,6 +18,9 @@
   --base-font: 1.6rem;
   --label-text: 1.4rem;
   --caption-text: 1rem;
+  --heading-fold-text: 2.4rem;
+  --heading-mobile-text:3rem;
+  --heading-tablet-text: 3.7rem;
 }
 
 html {

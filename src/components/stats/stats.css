@@ -77,11 +77,16 @@
     gap: 1rem;
   }
 
+  .statscontent >h1{
+    font-size: var( --heading-tablet-text);
+  }
+
   .statsRight {
     width: 100%;
     align-items: center;
   }
   .stats {
+    text-align: center;
     width: 100%;
   }
 
@@ -93,4 +98,27 @@
   font-size: var(--base-font);
 }
 
+}
+
+/* Media Query For Mobile Device*/
+
+@media only screen and (max-width: 600px) {
+
+  .statscontent {
+    text-align: left;
+  }
+  .statscontent >h1{
+    font-size: var( --heading-mobile-text);
+  }
+}
+
+/* Media Query For Fold Device*/
+
+@media only screen and (max-width: 320px) {
+  .statscontent {
+    text-align: center;
+  }
+  .statscontent >h1{
+    font-size: var( --heading-fold-text);
+  }
 }

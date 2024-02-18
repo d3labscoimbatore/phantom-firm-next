@@ -7,7 +7,6 @@
 
 .chooseUsTitleDesc {
   font-weight: 400;
-  max-width: 63.6rem;
 }
 
 .chooseUsCard {
@@ -33,9 +32,6 @@
     margin: 2rem 0 4.5rem 0;
   }
 
-  .chooseUsTitleDesc {
-    max-width: 100%;
-  }
 }
 
 /* For Mobile */
@@ -45,9 +41,6 @@
     margin: 2rem 0 2rem 0;
   }
 
-  .chooseUsTitleDesc {
-    max-width: 100%;
-  }
 }
 
 /* For Fold */
@@ -60,9 +53,5 @@
   .chooseUsTitle {
     text-align: center;
     margin: 2rem 0 2rem 0;
-  }
-
-  .chooseUsTitleDesc {
-    max-width: 100%;
   }
 }
