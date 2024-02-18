@@ -30,8 +30,7 @@ export default async function Home() {
 
   return (
     <main>
-      {/* <Header headerSection={headerSection} /> */}
-      <TestHeader/>
+      <Header headerSection={headerSection} />
       <Hero heroSection={heroSection} />
       <About aboutSection={aboutSection} />
       <Service serviceSection={serviceSection} />
