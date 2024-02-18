@@ -30,7 +30,7 @@ const Header = ({ headerSection }) => {
             <li>
               <Link
                 href= "/#solutions"
-                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
+                // onClick={() => setIsbuttonClicked(!isbuttonClicked)}
               >
                 {navigationMenu[0]}
               </Link>
@@ -38,7 +38,7 @@ const Header = ({ headerSection }) => {
             <li>
               <Link
                 href= "/#about"
-                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
+                // onClick={() => setIsbuttonClicked(!isbuttonClicked)}
               >
                 {navigationMenu[1]}
               </Link>
@@ -46,7 +46,7 @@ const Header = ({ headerSection }) => {
             <li>
               <Link
                 href=  "/#faq"
-                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
+                // onClick={() => setIsbuttonClicked(!isbuttonClicked)}
               >
                 {navigationMenu[2]}
               </Link>
@@ -54,7 +54,7 @@ const Header = ({ headerSection }) => {
             <li>
               <Link
                 href=  "/#contact"
-                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
+                // onClick={() => setIsbuttonClicked(!isbuttonClicked)}
               >
                 <div className="contact lastItem">
                   <lottie-player
