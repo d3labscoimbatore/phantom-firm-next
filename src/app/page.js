@@ -29,14 +29,14 @@ export default async function Home() {
 
   return (
     <main>
-      <Header headerSection={headerSection} />
+      {/* <Header headerSection={headerSection} />
       <Hero heroSection={heroSection} />
       <About aboutSection={aboutSection} />
       <Service serviceSection={serviceSection} />
       <ChooseUs benefitsSection={benefitsSection} />
       <Stats statisticSection={statisticSection} />
       <Faq faqSection={faqSection} />
-      <Contact contactSection={contactSection} />
+      <Contact contactSection={contactSection} /> */}
       <Footer footerSection={footerSection} />
     </main>
   );
