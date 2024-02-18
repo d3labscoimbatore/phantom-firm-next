@@ -1,10 +1,10 @@
-"use client";
+"use client"
 
 import logo from "../../../public/logo.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import { IoMenu, IoClose } from "react-icons/io5";
-import { useRef, useState, useEffect } from "react";
+import { useState } from "react";
 import "../header/header.css";
 
 const Header = ({ headerSection }) => {
@@ -12,10 +12,6 @@ const Header = ({ headerSection }) => {
 
   const [isbuttonClicked, setIsbuttonClicked] = useState(false);
 
-  const ref = useRef(null);
-  useEffect(() => {
-    import("@lottiefiles/lottie-player");
-  });
 
   return (
     <header className="headerContainer">
@@ -42,24 +38,7 @@ const Header = ({ headerSection }) => {
                   <p>{navigationMenu[2]}</p>
                 </Link>
             </li>
-            <li onClick={() => setIsbuttonClicked(!isbuttonClicked)}>
-                <Link href="#contact">
-                  <div className="contact lastItem">
-                    <lottie-player
-                      ref={ref}
-                      autoplay
-                      loop
-                      mode="normal"
-                      src={lottiePlayerURL}
-                      style={{
-                        width: "22rem",
-                        height: "max-content",
-                      }}
-                    ></lottie-player>
-                    <span className="contactText"> {navigationMenu[3]} </span>
-                  </div>
-                </Link>
-            </li>
+           
           </ul>
 
           {/* Hamburger Menu for Mobile Device  */}
