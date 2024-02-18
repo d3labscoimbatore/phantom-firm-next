@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { useRef, useState, useEffect } from "react";
-import "@lottiefiles/lottie-player"; 
 import "../header/header.css";
 
 const Header = ({ headerSection }) => {
@@ -13,21 +12,17 @@ const Header = ({ headerSection }) => {
 
   const [isbuttonClicked, setIsbuttonClicked] = useState(false);
 
-
+  const ref = useRef(null);
   useEffect(() => {
-    import("@lottiefiles/lottie-player").then(() => {
-      console.log("Lottie Player loaded successfully");
-    }).catch((error) => {
-      console.error("Failed to load Lottie Player:", error);
-    });
-  }, []);
+    import("@lottiefiles/lottie-player");
+  });
 
   return (
     <header className="headerContainer">
       <div className="header container">
         <div className="logo">
           <Link href="/">
-            <Image src={logo} alt="phantom firm" width={160} height={48} />
+            <Image src={logo} alt="phantom firm" width={160} height={"auto"} />
           </Link>
         </div>
         <div>
@@ -45,6 +40,7 @@ const Header = ({ headerSection }) => {
                 <Link href="#contact">
                   <div className="contact lastItem">
                     <lottie-player
+                      ref={ref}
                       autoplay
                       loop
                       mode="normal"

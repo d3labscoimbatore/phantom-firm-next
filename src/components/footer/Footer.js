@@ -23,7 +23,7 @@ const Footer = ({ footerSection }) => {
         <div className="footerTop container">
           <div className="footerTopLogo">
             <Link href="/">
-              <Image src={logo} width={162} height={50} alt="Phantom Firm" />
+              <Image src={logo} width={162} height={"auto"} alt="Phantom Firm" />
             </Link>
           </div>
           <div className="footerTopRight">

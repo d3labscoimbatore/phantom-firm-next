@@ -1,8 +1,6 @@
 "use client";
-
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import "../hero/hero.css";
-import "@lottiefiles/lottie-player";
 
 const Hero = ({ heroSection }) => {
   const { title, subTitle, lottiePlayerURL } = heroSection;
@@ -12,14 +10,9 @@ const Hero = ({ heroSection }) => {
   const thirdTitle = title.substring(34, 41);
 
   const ref = useRef(null);
-
-  useEffect(() => {
-    import("@lottiefiles/lottie-player").then(() => {
-      console.log("Lottie Player loaded successfully");
-    }).catch((error) => {
-      console.error("Failed to load Lottie Player:", error);
-    });
-  }, []);
+  React.useEffect(() => {
+    import("@lottiefiles/lottie-player");
+  });
 
   return (
     <div className="heroContainer">
@@ -36,6 +29,7 @@ const Hero = ({ heroSection }) => {
         </div>
         <div className="heroRight">
           <lottie-player
+            ref={ref}
             autoplay
             loop
             src={lottiePlayerURL}

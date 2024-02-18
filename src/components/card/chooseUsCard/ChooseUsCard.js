@@ -6,7 +6,7 @@ const ChooseUsCard = ({ icon, title, description }) => {
   return (
     <div className="chooseUsCardContainer">
       <div className="chooseUsCardIcon">
-        <Image src={tickIcon} width={100} height={100} alt="icon" />
+        <Image src={tickIcon} width={100} height={"auto"} alt="icon" />
       </div>
       <div className="chooseUsCardContent">
         <h3>{title}</h3>
