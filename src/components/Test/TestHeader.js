@@ -2,13 +2,27 @@ import Link from "next/link";
 
 const TestHeader = () => {
   return (
-    <div>
-      <div style={{ display: "inline-block", height: "100vh" }}>
-        <Link href="#about">Settings</Link>
+    <header>
+      <div className="logo">
+        <Link href="/">Logo</Link>
       </div>
-
-      <section id="about" style={{ height: "100vh" }}>About</section>
-    </div>
+      <nav>
+        <ul>
+          <li>
+            <Link href="#solutions">Solutions</Link>
+          </li>
+          <li>
+            <Link href="#about">About</Link>
+          </li>
+          <li>
+            <Link href="#faq">Faqs</Link>
+          </li>
+          <li>
+            <Link href="#contact">Contact</Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 };
 
