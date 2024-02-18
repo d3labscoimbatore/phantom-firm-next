@@ -8,7 +8,7 @@ import { useRef, useState, useEffect } from "react";
 import "../header/header.css";
 
 const Header = ({ headerSection }) => {
-  const { navigationMenu, navigationLinks, lottiePlayerURL } = headerSection;
+  const { navigationMenu, lottiePlayerURL } = headerSection;
 
   const [isbuttonClicked, setIsbuttonClicked] = useState(false);
 
@@ -21,56 +21,46 @@ const Header = ({ headerSection }) => {
     <header className="headerContainer">
       <div className="header container">
         <div className="logo">
-          <Link href="/"  >
+          <Link href="/">
             <Image src={logo} alt="phantom firm" width={160} height={48} />
           </Link>
         </div>
         <div>
           <ul className={`menus ${isbuttonClicked ? "menusActive" : ""}`}>
             <li>
-              <Link
-                href= "#"
-                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
-              >
-                {navigationMenu[0]}
-              </Link>
+              <div onClick={() => setIsbuttonClicked(!isbuttonClicked)}>
+                <Link href="#solutions">{navigationMenu[0]}</Link>
+              </div>
             </li>
             <li>
-              <Link
-                href= "#"
-                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
-              >
-                {navigationMenu[1]}
-              </Link>
+              <div onClick={() => setIsbuttonClicked(!isbuttonClicked)}>
+                <Link href="#about">{navigationMenu[1]}</Link>
+              </div>
             </li>
             <li>
-              <Link
-                href=  "#"
-                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
-              >
-                {navigationMenu[2]}
-              </Link>
+              <div onClick={() => setIsbuttonClicked(!isbuttonClicked)}>
+                <Link href="#faq">{navigationMenu[2]}</Link>
+              </div>
             </li>
             <li>
-              <Link
-                href=  "#"
-                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
-              >
-                <div className="contact lastItem">
-                  <lottie-player
-                  ref={ref}
-                    autoplay
-                    loop
-                    mode="normal"
-                    src={lottiePlayerURL}
-                    style={{
-                      width: "22rem",
-                      height: "max-content",
-                    }}
-                  ></lottie-player>
-                  <span className="contactText"> {navigationMenu[3]} </span>
-                </div>
-              </Link>
+              <div onClick={() => setIsbuttonClicked(!isbuttonClicked)}>
+                <Link href="#contact">
+                  <div className="contact lastItem">
+                    <lottie-player
+                      ref={ref}
+                      autoplay
+                      loop
+                      mode="normal"
+                      src={lottiePlayerURL}
+                      style={{
+                        width: "22rem",
+                        height: "max-content",
+                      }}
+                    ></lottie-player>
+                    <span className="contactText"> {navigationMenu[3]} </span>
+                  </div>
+                </Link>
+              </div>
             </li>
           </ul>
 
@@ -92,4 +82,3 @@ const Header = ({ headerSection }) => {
 };
 
 export default Header;
-
