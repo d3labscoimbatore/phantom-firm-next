@@ -29,7 +29,7 @@ const Header = ({ headerSection }) => {
           <ul className={`menus ${isbuttonClicked ? "menusActive" : ""}`}>
             <li>
               <Link
-                href= "/#solutions"
+                href= "#"
                 onClick={() => setIsbuttonClicked(!isbuttonClicked)}
               >
                 {navigationMenu[0]}
@@ -37,7 +37,7 @@ const Header = ({ headerSection }) => {
             </li>
             <li>
               <Link
-                href= "/#about"
+                href= "#"
                 onClick={() => setIsbuttonClicked(!isbuttonClicked)}
               >
                 {navigationMenu[1]}
@@ -45,7 +45,7 @@ const Header = ({ headerSection }) => {
             </li>
             <li>
               <Link
-                href=  "/#faq"
+                href=  "#"
                 onClick={() => setIsbuttonClicked(!isbuttonClicked)}
               >
                 {navigationMenu[2]}
@@ -53,7 +53,7 @@ const Header = ({ headerSection }) => {
             </li>
             <li>
               <Link
-                href=  "/#contact"
+                href=  "#"
                 onClick={() => setIsbuttonClicked(!isbuttonClicked)}
               >
                 <div className="contact lastItem">
