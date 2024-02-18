@@ -33,7 +33,7 @@ const Footer = ({ footerSection }) => {
                   <h3 className="contactTitle"> {address.title} </h3>
                   <div className="locationIcon">
                     <span></span>
-                    <button type="button" disabled>
+                    <button type="button">
                       <TbLocationFilled />
                     </button>
                   </div>
