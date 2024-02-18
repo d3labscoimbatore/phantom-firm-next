@@ -12,10 +12,10 @@ const Header = ({ headerSection }) => {
 
   const [isbuttonClicked, setIsbuttonClicked] = useState(false);
 
-  const ref = useRef(null);
-  useEffect(() => {
-    import("@lottiefiles/lottie-player");
-  });
+  // const ref = useRef(null);
+  // useEffect(() => {
+  //   import("@lottiefiles/lottie-player");
+  // });
 
   return (
     <header className="headerContainer">
@@ -36,7 +36,7 @@ const Header = ({ headerSection }) => {
             <li onClick={() => setIsbuttonClicked(!isbuttonClicked)}>
                 <Link href="#faq">{navigationMenu[2]}</Link>
             </li>
-            <li onClick={() => setIsbuttonClicked(!isbuttonClicked)}>
+            {/* <li onClick={() => setIsbuttonClicked(!isbuttonClicked)}>
                 <Link href="#contact">
                   <div className="contact lastItem">
                     <lottie-player
@@ -53,7 +53,7 @@ const Header = ({ headerSection }) => {
                     <span className="contactText"> {navigationMenu[3]} </span>
                   </div>
                 </Link>
-            </li>
+            </li> */}
           </ul>
 
           {/* Hamburger Menu for Mobile Device  */}

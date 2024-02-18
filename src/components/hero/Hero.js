@@ -9,10 +9,10 @@ const Hero = ({ heroSection }) => {
   const secondTitle = title.substring(20, 33);
   const thirdTitle = title.substring(34, 41);
 
-  const ref = useRef(null);
-  React.useEffect(() => {
-    import("@lottiefiles/lottie-player");
-  });
+  // const ref = useRef(null);
+  // React.useEffect(() => {
+  //   import("@lottiefiles/lottie-player");
+  // });
 
   return (
     <div className="heroContainer">
@@ -28,7 +28,7 @@ const Hero = ({ heroSection }) => {
           <h3 className="shortDescription">{subTitle}</h3>
         </div>
         <div className="heroRight">
-          <lottie-player
+          {/* <lottie-player
             ref={ref}
             autoplay
             loop
@@ -36,7 +36,7 @@ const Hero = ({ heroSection }) => {
             speed="1"
             style={{ width: "50rem", height: "auto", marginTop: "-5rem" }}
             debug
-          ></lottie-player>
+          ></lottie-player> */}
         </div>
       </div>
     </div>
