@@ -27,23 +27,16 @@ const Header = ({ headerSection }) => {
         </div>
         <div>
           <ul className={`menus ${isbuttonClicked ? "menusActive" : ""}`}>
-            <li>
-              <div onClick={() => setIsbuttonClicked(!isbuttonClicked)}>
+            <li onClick={() => setIsbuttonClicked(!isbuttonClicked)}>
                 <Link href="#solutions">{navigationMenu[0]}</Link>
-              </div>
             </li>
-            <li>
-              <div onClick={() => setIsbuttonClicked(!isbuttonClicked)}>
+            <li onClick={() => setIsbuttonClicked(!isbuttonClicked)}>
                 <Link href="#about">{navigationMenu[1]}</Link>
-              </div>
             </li>
-            <li>
-              <div onClick={() => setIsbuttonClicked(!isbuttonClicked)}>
+            <li onClick={() => setIsbuttonClicked(!isbuttonClicked)}>
                 <Link href="#faq">{navigationMenu[2]}</Link>
-              </div>
             </li>
-            <li>
-              <div onClick={() => setIsbuttonClicked(!isbuttonClicked)}>
+            <li onClick={() => setIsbuttonClicked(!isbuttonClicked)}>
                 <Link href="#contact">
                   <div className="contact lastItem">
                     <lottie-player
@@ -60,7 +53,6 @@ const Header = ({ headerSection }) => {
                     <span className="contactText"> {navigationMenu[3]} </span>
                   </div>
                 </Link>
-              </div>
             </li>
           </ul>
 
