@@ -12,10 +12,10 @@ const Header = ({ headerSection }) => {
 
   const [isbuttonClicked, setIsbuttonClicked] = useState(false);
 
-  // const ref = useRef(null);
-  // useEffect(() => {
-  //   import("@lottiefiles/lottie-player");
-  // });
+  const ref = useRef(null);
+  useEffect(() => {
+    import("@lottiefiles/lottie-player");
+  });
 
   return (
     <header className="headerContainer">
@@ -30,7 +30,7 @@ const Header = ({ headerSection }) => {
             <li>
               <Link
                 href= "/#solutions"
-                // onClick={() => setIsbuttonClicked(!isbuttonClicked)}
+                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
               >
                 {navigationMenu[0]}
               </Link>
@@ -38,7 +38,7 @@ const Header = ({ headerSection }) => {
             <li>
               <Link
                 href= "/#about"
-                // onClick={() => setIsbuttonClicked(!isbuttonClicked)}
+                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
               >
                 {navigationMenu[1]}
               </Link>
@@ -46,12 +46,12 @@ const Header = ({ headerSection }) => {
             <li>
               <Link
                 href=  "/#faq"
-                // onClick={() => setIsbuttonClicked(!isbuttonClicked)}
+                onClick={() => setIsbuttonClicked(!isbuttonClicked)}
               >
                 {navigationMenu[2]}
               </Link>
             </li>
-            {/* <li>
+            <li>
               <Link
                 href=  "/#contact"
                 // onClick={() => setIsbuttonClicked(!isbuttonClicked)}
@@ -71,7 +71,7 @@ const Header = ({ headerSection }) => {
                   <span className="contactText"> {navigationMenu[3]} </span>
                 </div>
               </Link>
-            </li> */}
+            </li>
           </ul>
 
           {/* Hamburger Menu for Mobile Device  */}
