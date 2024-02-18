@@ -12,10 +12,10 @@ const Header = ({ headerSection }) => {
 
   const [isbuttonClicked, setIsbuttonClicked] = useState(false);
 
-  // const ref = useRef(null);
-  // useEffect(() => {
-  //   import("@lottiefiles/lottie-player");
-  // });
+  const ref = useRef(null);
+  useEffect(() => {
+    import("@lottiefiles/lottie-player");
+  });
 
   return (
     <header className="headerContainer">
@@ -28,16 +28,16 @@ const Header = ({ headerSection }) => {
         <div>
           <ul className={`menus ${isbuttonClicked ? "menusActive" : ""}`}>
             <li onClick={() => setIsbuttonClicked(!isbuttonClicked)}>
-                <Link href="/#solutions">{navigationMenu[0]}</Link>
+                <Link href="#solutions" target="_blank" >{navigationMenu[0]}</Link>
             </li>
             <li onClick={() => setIsbuttonClicked(!isbuttonClicked)}>
-                <Link href="#about">{navigationMenu[1]}</Link>
+                <Link href="#about" target="_blank">{navigationMenu[1]}</Link>
             </li>
             <li onClick={() => setIsbuttonClicked(!isbuttonClicked)}>
-                <Link href="#faq">{navigationMenu[2]}</Link>
+                <Link href="#faq" target="_blank">{navigationMenu[2]}</Link>
             </li>
-            {/* <li onClick={() => setIsbuttonClicked(!isbuttonClicked)}>
-                <Link href="#contact">
+            <li onClick={() => setIsbuttonClicked(!isbuttonClicked)}>
+                <Link href="#contact" target="_blank">
                   <div className="contact lastItem">
                     <lottie-player
                       ref={ref}
@@ -53,7 +53,7 @@ const Header = ({ headerSection }) => {
                     <span className="contactText"> {navigationMenu[3]} </span>
                   </div>
                 </Link>
-            </li> */}
+            </li>
           </ul>
 
           {/* Hamburger Menu for Mobile Device  */}
