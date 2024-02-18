@@ -12,7 +12,7 @@ const Hero = ({ heroSection }) => {
   const ref = useRef(null);
   React.useEffect(() => {
     import("@lottiefiles/lottie-player");
-  });
+  },[]);
 
   return (
     <div className="heroContainer">

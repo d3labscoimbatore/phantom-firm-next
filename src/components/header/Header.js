@@ -15,7 +15,7 @@ const Header = ({ headerSection }) => {
   const ref = useRef(null);
   useEffect(() => {
     import("@lottiefiles/lottie-player");
-  });
+  },[]);
 
   return (
     <header className="headerContainer">
