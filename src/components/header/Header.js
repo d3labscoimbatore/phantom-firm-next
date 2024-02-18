@@ -28,7 +28,7 @@ const Header = ({ headerSection }) => {
         <div>
           <ul className={`menus ${isbuttonClicked ? "menusActive" : ""}`}>
             <li onClick={() => setIsbuttonClicked(!isbuttonClicked)}>
-                <Link href="#solutions">{navigationMenu[0]}</Link>
+                <Link href="/#solutions">{navigationMenu[0]}</Link>
             </li>
             <li onClick={() => setIsbuttonClicked(!isbuttonClicked)}>
                 <Link href="#about">{navigationMenu[1]}</Link>

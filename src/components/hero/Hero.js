@@ -22,7 +22,7 @@ const Hero = ({ heroSection }) => {
             {firstTitle}
             <span className="lineBreak">
               {" "}
-              {secondTitle}e<span className="animation"> {thirdTitle}</span>
+              {secondTitle}<span className="animation"> {thirdTitle}</span>
             </span>
           </h1>
           <h3 className="shortDescription">{subTitle}</h3>
@@ -34,7 +34,7 @@ const Hero = ({ heroSection }) => {
             loop
             src={lottiePlayerURL}
             speed="1"
-            style={{ width: "50rem", height: "50rem", marginTop: "-5rem" }}
+            style={{ width: "50rem", height: "auto", marginTop: "-5rem" }}
             debug
           ></lottie-player>
         </div>

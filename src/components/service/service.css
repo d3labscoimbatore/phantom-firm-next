@@ -18,8 +18,19 @@
   margin: 0 auto;
 }
 
+
+/* For Fold Device*/
+
 @media only screen and (max-width: 820px) {
   .serviceTitle {
     margin: 2rem 0;
+  }
+}
+
+/* For Fold Device*/
+
+@media only screen and (max-width: 320px) {
+  .serviceTitle{
+    text-align: center;
   }
 }
