@@ -32,10 +32,9 @@ export default async function Home() {
     <main>
       <TestHeader/>
       {/* <Testabout/> */}
-      <About aboutSection={aboutSection} />
       {/* <Header headerSection={headerSection} />
       <Hero heroSection={heroSection} />
-      
+      <About aboutSection={aboutSection} />
       <Service serviceSection={serviceSection} />
       <ChooseUs benefitsSection={benefitsSection} />
       <Stats statisticSection={statisticSection} />
